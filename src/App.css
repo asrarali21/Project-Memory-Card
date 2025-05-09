@@ -1,0 +1,146 @@
+/* Body Styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Unique gradient background */
+    color: #fff; /* White text for contrast */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  /* Heading Styling */
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: #ffcc70; /* Warm yellow for the heading */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Paragraph Styling */
+  p {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #ddd; /* Light gray for paragraphs */
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-family: 'Verdana', sans-serif;
+  }
+  
+  /* Pokémon Container */
+  .pokemon-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Pokémon Card Styling */
+  .pokemon-detail {
+    background: linear-gradient(135deg, #ff7eb3, #ff758c); /* Gradient for cards */
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .pokemon-detail:hover {
+    transform: translateY(-10px) scale(1.05); /* Lift and zoom on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Pokémon Image Styling */
+  .pokemon-detail img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Pokémon Name Styling */
+  .pokemon-detail p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: capitalize;
+    margin: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    .pokemon-detail img {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .pokemon-detail p {
+      font-size: 14px;
+    }
+  }
+  /* Pokémon Container */
+.pokemon-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Default grid layout */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Pokémon Card Styling */
+  .pokemon-detail {
+    background: linear-gradient(135deg, #ff7eb3, #ff758c); /* Gradient for cards */
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .pokemon-detail:hover {
+    transform: translateY(-10px) scale(1.05); /* Lift and zoom on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .pokemon-container {
+      grid-template-columns: 1fr; /* Single column layout */
+      gap: 15px; /* Reduce gap between cards */
+    }
+  
+    .pokemon-detail {
+      padding: 15px; /* Adjust padding for smaller screens */
+    }
+  
+    .pokemon-detail img {
+      width: 100px; /* Adjust image size */
+      height: 100px;
+    }
+  
+    .pokemon-detail p {
+      font-size: 16px; /* Adjust font size for Pokémon names */
+    }
+  }
