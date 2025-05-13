@@ -18,5 +18,3 @@ A fun and interactive memory game built with React! Test your memory by clicking
 - External API for image + data *(e.g., PokéAPI, Giphy, etc.)*
 
 ## 📷 Preview
-
-*(Add a screenshot or demo GIF if available)*
